@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: NotionInter, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:6vh;
+}
+header .logo img {
+    width: 5vh;
+}
+
+header .nav ul{
+   display: flex;
+   gap: 3.4vh;
+   list-style-type: none;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+header .register{
+    display: flex;
+    gap: 3vh;
+}
+
+header .register button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .register button .freeNotion{
+    background: blue;
+}
+
+section .sec1{
+    width: 100%;
+    text-align: center;
+}
+section .sec1 video{
+    width: 50%;
+}
+
+.sec1 h1{
+    font-family: NotionInter, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 9vh;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.sec1 p{
+    font-size: 3vh;
+    margin-top: 2vh;
+    line-height: 64px;
+}
+
+.sec1 .sec1Btn a{
+    text-decoration: none;
+    
+}
+
+.sec1 .sec1Btn .freeNotion{
+    background-color: blue;
+    border: none;
+    padding: 3vh;
+}
+
+.sec1 .sec1video{
+    margin-top: 5vh;
+}
+
+.sec1 .sec1video video{
+    width: 80%;
+}
+
+.sec1 .team{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+
+.sec1 .team img{
+    width: 13vh;
+    height: fit-content;
+}
