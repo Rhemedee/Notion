@@ -81,9 +81,157 @@ section .sec1 video{
     display: flex;
     justify-content: space-around;
     margin-top: 4vh;
+    padding: 5vh;
 }
 
 .sec1 .team img{
     width: 13vh;
     height: fit-content;
 }
+
+.sec2{
+    background-color: rgb(248, 240, 240);
+    padding: 14vh;
+}
+
+.sec2 .intro h1{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.sec2 .notionAgent{
+    margin: 5vh;
+    background-color: white;
+    display: flex;
+    border-radius: 3vh;
+}
+
+.sec2 .notionAgent .leftNA{
+    padding: 4vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16vh;
+}
+
+.sec2 .notionAgent .leftNA .downLNA .hand{
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.sec2 .notionAgent .leftNA .downLNA .what{
+    color: rgb(173, 170, 170);
+    margin-bottom: 1vh;
+}
+
+.sec2 .notionAgent .leftNA .downLNA button{
+    width: 100%;
+    text-align: left;
+    padding: 2vh;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.sec2 .notionAgent .leftNA .downLNA button:hover{
+    background-color: rgb(248, 240, 240);
+}
+
+.sec2 .notionAgent .leftNA hr{
+    color: rgb(248, 240, 240);
+}
+
+.sec2 .notionAgent .rightNA{
+    width: 70%;
+}
+
+.sec2 .notionAgent .rightNA img{
+    width: 100%;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.sec2 .customAgent{
+    margin: 5vh;
+    background-color: white;
+    display: flex;
+    border-radius: 3vh;
+}
+
+.sec2 .customAgent .leftCA{
+    width: 30%;
+    padding: 4vh;
+}
+
+.sec2 .customAgent .rightCA{
+    width: 70%;
+}
+
+.sec2 .customAgent .rightCA img{
+    width: 100%;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.sec2 .com{
+    margin: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.sec2 .com .ES{
+    background-color: white;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec2 .com .comup{
+    height: 30%;
+    padding: 4vh;
+}
+
+.sec2 .com .ES .comdown img{
+    width: 100%;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.sec2 .com .meetingNote{
+    background-color: white;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec2 .com .ES .comImg img{
+    width: 100%;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.sec2 .flexible{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-radius: 3vh;
+    margin: 5vh;
+}
+
+.sec2 .flexible .flexLeft{
+    padding: 3vh;
+    /* width: 30%; */
+}
+
+.sec2 .flexible .flexright{
+    width: 70%;
+}
+
+.sec2 .flexible .flexright img{
+    width: 100%;
+}
+
