@@ -235,3 +235,151 @@ section .sec1 video{
     width: 100%;
 }
 
+.sec2 .text{
+    text-align: center;
+}
+
+.sec2 .text h1{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.sec3{
+    padding: 14vh;
+}
+
+.sec3 .up{
+    display: flex;
+}
+
+.sec3 .up .left{
+    width: 40%;
+}
+
+.sec3 .up .left h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sec3 .up .left p{
+    margin-bottom: 10px;
+}
+
+.sec3 .up .left a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sec3 .up .left a:hover{
+    text-decoration: underline;
+}
+
+.sec3 .up .right{
+    width: 60%;
+}
+
+.sec3 .up .right img{
+    width: 100%;
+}
+
+.sec3 .down{
+    border: 1px solid rgb(194, 190, 190);
+    border-radius: 10px;
+    padding: 5vh;
+}
+
+.sec3 .down .gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5vh;
+    font-weight: 600;
+}
+
+.sec3 .down .table{
+    background-color: rgb(253, 247, 247);
+    margin-top: 8vh;
+    border-radius: 10px;
+    padding: 3vh;
+}
+
+.sec3 .down .table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+td{
+    font-size: 30px;
+    font-weight: 700;
+}
+ td #num{
+    font-size: 30px;
+    font-weight: 700;
+    width: 20vh;
+ }
+
+ .sec4{
+    background-color: rgb(248, 240, 240);
+    padding: 14vh;
+ }
+
+ .sec4 h1{
+    font-size: 60px;
+ }
+
+ .sec4 .openAI{
+    background-color: white;
+    padding: 3vh;
+    border-radius: 10px;
+    display: flex;
+    gap: 5vh;
+ }
+
+ .sec4 .openAI .left{
+    width: 75%;
+ }
+
+ .sec4 .openAI .left .text{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2vh;
+ }
+
+ .sec4 .openAI .left a{
+    text-decoration: none;
+ } 
+ .sec4 .openAI .left a p{
+    margin-top: 10vh;
+    color: blue;
+ }
+
+ .sec4 .openAI .left a p:hover{
+    text-decoration: underline;
+    color: black;
+ }
+
+ .sec4 .openAI .right img{
+    border-radius: 10px;
+ }
+
+ .sec4 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vh;
+    margin: 4vh 0; 
+ }
+
+ .sec4 .container .box{
+    background-color: white;
+    padding: 4vh;
+    border-radius: 10px;
+ }
+
+ .sec4 .container .box img{
+    width: 11vh;
+}
