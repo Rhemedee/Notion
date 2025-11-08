@@ -6,20 +6,36 @@
 }
 header{
     display: flex;
+    background-color: white;
     justify-content: space-between;
-    padding:6vh;
+    padding:3vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 header .logo img {
     width: 5vh;
 }
 
+header .nav ul button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 5px;
+}
 header .nav ul{
    display: flex;
-   gap: 3.4vh;
+   gap: 2vh;
    list-style-type: none;
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: bold;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+header .nav ul button:hover{
+    background-color: rgb(228, 228, 228);
 }
 
 header .register{
@@ -27,16 +43,30 @@ header .register{
     gap: 3vh;
 }
 
-header .register button {
-    background: none;
+header .register button{
+    padding: 1.5vh 2vh;
+    font-size: 14px;
     border: none;
-    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
-header .register button .freeNotion{
-    background: blue;
+header .register .login button{
+    background-color: white;
 }
 
+header .register .login button:hover{
+    background-color: rgb(233, 232, 232);
+}
+
+header .register .free button{
+    background-color: rgb(0, 68, 255);
+    color: white;
+}
+
+header .register .free button:hover{
+    background-color: rgb(52, 106, 255);
+}
 section .sec1{
     width: 100%;
     text-align: center;
@@ -50,25 +80,42 @@ section .sec1 video{
     font-size: 9vh;
     font-weight: 700;
     line-height: 64px;
+    margin-bottom: 2vh;
 }
 
 .sec1 p{
     font-size: 3vh;
-    margin-top: 2vh;
-    line-height: 64px;
+    margin-top: vh;
 }
 
+.sec1 .sec1Btn{
+    display: flex;
+    justify-content: center;
+    gap: 4vh;
+    margin-top: 4vh;
+}
 .sec1 .sec1Btn a{
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .sec1 .sec1Btn .freeNotion{
-    background-color: blue;
+    background-color: rgb(0, 68, 255);
     border: none;
-    padding: 3vh;
+    font-size: 15px;
+    padding: 2vh 4vh;
+    margin-top: 2vh;
+    border-radius: 10px;
 }
 
+.sec1 .sec1Btn .demo{
+    background-color: rgb(188, 220, 248);
+    border: none;
+    font-size: 15px;
+    padding: 2vh 4vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .sec1 .sec1video{
     margin-top: 5vh;
 }
@@ -382,4 +429,265 @@ td{
 
  .sec4 .container .box img{
     width: 11vh;
+}
+
+.sec5{
+    padding: 14vh;
+}
+.sec5 .up{
+    display: flex;
+    width: 100%;
+}
+
+.sec5 .up .left{
+    width: 60%;
+    padding-right: 5vh;
+
+}
+
+.sec5 .up .left h1{
+    font-size: 60px;
+    line-height: 56px;
+}
+
+.sec5 .up .left p{
+    margin: 3vh 0;
+}
+
+.sec5 .up .left a{
+    text-decoration: none;  
+    color: blue;
+}
+
+.sec5 .up .left a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.sec5 .up .right{
+    width: 40%;
+}
+
+.sec5 .up .right img{
+    width: 100%;
+}
+
+.sec5 .down{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4vh;
+    margin-top: 5vh;
+}
+.sec5 .down .box{
+    border: 1px solid rgb(216, 213, 213);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sec5 .down .box:hover{
+    box-shadow: 0 4px 12px rgb(230, 224, 224);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.sec6{
+    background-color: rgb(248, 240, 240);
+    padding: 14vh;
+}
+
+.sec6 .try{
+    font-size: 9vh;
+    margin-bottom: 4vh;
+}
+.sec6 .container{
+    display: flex;
+    gap: 4vh;
+}
+.sec6 .container .left{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.sec6 .container .left .up{
+    padding: 4vh;
+}
+.sec6 .container .left .up img{
+    width: 8vh;
+}
+
+.sec6 .container .left p{
+    font-weight: 500;
+}
+
+.sec6 .container .left .up button{
+    display: block;
+    margin: 2vh;
+    padding: 1vh 3vh;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.sec6 .container .left .down{
+    padding-left: 4vh;
+}
+
+.sec6 .container .left .down img{
+    border-top-left-radius: 10px;
+    box-shadow: 1 4px 12px rgb(0, 0, 0, 0.4);
+}
+
+.sec6 .container .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 4vh;
+}
+
+.sec6 .container .right .up{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    height: 50%;
+}
+.sec6 .container .right .up .left{
+    padding: 4vh;
+    width: 70%;
+}
+.sec6 .container .right .up .left img{
+    width: 8vh;
+}
+
+.sec6 .container .right .up .left h2{
+    font-size: 30px;
+}
+.sec6 .container .right .up .left button{
+    width: fit-content;
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(230, 225, 225);
+}
+.sec6 .container .right .up .right{
+    width: 30%;
+    text-align: right;
+    margin-top: 6vh;
+}
+
+.sec6 .container .right .up .right img{
+    width: 100%;
+    border-top-left-radius: 10px;
+}
+
+.sec6 .container .right .down{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    height: 50%;
+}
+.sec6 .container .right .down .left{
+    padding: 4vh;
+    width: 70%;
+}
+.sec6 .container .right .down .left img{
+    width: 8vh;
+}
+
+.sec6 .container .right .down .left h2{
+    font-size: 30px;
+}
+.sec6 .container .right .down .left button{
+    width: fit-content;
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(230, 225, 225);
+}
+.sec6 .container .right .down .right{
+    width: 30%;
+    text-align: right;
+    margin-top: 6vh;
+}
+
+.sec6 .container .right .down .right img{
+    width: 100%;
+    border-top-left-radius: 10px;
+}
+
+.sec6 {
+    color: black;
+}
+
+.sec6 a{
+    color: black;
+}
+
+.sec6 a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.sec7{
+    background-color: white;
+    padding: 14vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec7 .notion .notionLogo{
+    display: flex;
+    gap: 1vh;
+}
+
+.sec7 .notion .notionLogo img{
+    width: 7vh;
+}
+
+.sec7 .logo{
+    display: flex;
+    gap: 3vh;
+    margin-top: 4vh;
+}
+
+.sec7 .logo img{
+    width: 3vh;
+}
+
+.sec7 .form button{
+    background-color: white;
+    padding: 7px 3vh;
+    margin: 4vh 0;
+    font-size: 15px;
+    border: 1px solid rgb(219, 215, 215);
+    border-radius: 6px;
+}
+
+.sec7 .text a{
+    text-decoration: none;
+    color: rgb(156, 153, 153);
+}
+
+.sec7 .text .copyRight{
+    color: rgb(156, 153, 153);
+    margin: 4vh 0;
+}
+
+.sec7 .box ul{
+    list-style: none;
+    line-height: 30px;
+}
+
+.sec7 .box a {
+    color: black;
+    text-decoration: none;
+}
+
+.sec7 .box a:hover{
+    text-decoration: underline;
 }
