@@ -38,35 +38,7 @@ header .nav ul button:hover{
     background-color: rgb(228, 228, 228);
 }
 
-header .register{
-    display: flex;
-    gap: 3vh;
-}
-
-header .register button{
-    padding: 1.5vh 2vh;
-    font-size: 14px;
-    border: none;
-    font-weight: 500;
-    border-radius: 5px;
-}
-
-header .register .login button{
-    background-color: white;
-}
-
-header .register .login button:hover{
-    background-color: rgb(233, 232, 232);
-}
-
-header .register .free button{
-    background-color: rgb(0, 68, 255);
-    color: white;
-}
-
-header .register .free button:hover{
-    background-color: rgb(52, 106, 255);
-}
+/* Register buttons consolidated into .nav-actions (no separate .register block) */
 section .sec1{
     width: 100%;
     text-align: center;
@@ -691,3 +663,126 @@ td{
 .sec7 .box a:hover{
     text-decoration: underline;
 }
+
+/* Hidden checkbox used to toggle mobile nav */
+.nav-toggle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+/* Hamburger label (hidden on large screens) */
+.nav-toggle-label{
+    display: none;
+    width: 2.4rem;
+    height: 1.6rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-toggle-label span{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #111;
+    border-radius: 2px;
+}
+
+/* Nav actions inside .nav (hidden on wide screens, shown inside mobile dropdown) */
+.nav .nav-actions{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: auto;
+    align-items: center;
+}
+.nav .nav-actions .nav-login,
+.nav .nav-actions .nav-free{
+    border: none;
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nav .nav-actions .nav-login{ background: white; border: 1px solid rgba(0,0,0,0.08); }
+.nav .nav-actions .nav-free{ background: rgb(0,68,255); color: #fff; }
+
+/* Breakpoint: <= 1280px (xl) - reduce large paddings and image sizes */
+@media (max-width: 1280px) {
+    header{ padding: 2.5vh; }
+    .sec2, .sec3, .sec4, .sec5, .sec6, .sec7{ padding: 10vh; }
+    .sec1 h1{ font-size: 8.5vh; }
+    .sec1 video{ width: 55%; }
+    header .nav ul{ gap: 1.6vh; }
+}
+
+/* Breakpoint: <= 1024px (lg) - adapt layout for tablets */
+@media (max-width: 1024px) {
+    header{ padding: 2vh; }
+    header .nav ul{ gap: 1.2vh; }
+    header .nav ul button{ font-size: 14px; padding: 6px 8px; }
+    .sec1 h1{ font-size: 7.5vh; }
+    .sec1 video{ width: 65%; }
+    .sec1 .sec1video video{ width: 92%; }
+    .sec4 .container{ grid-template-columns: repeat(2, 1fr); }
+    .sec5 .down{ grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Breakpoint: <= 768px (md) - show hamburger, stack nav, hide register */
+@media (max-width: 768px) {
+    header{ padding: 1rem; align-items: center; }
+
+    /* Show hamburger */
+    .nav-toggle-label{ display: flex; gap: 4px; margin-left: 1rem; }
+
+    /* Hide register on smaller screens; can be moved into menu if desired */
+    .register{ display: none; }
+
+    /* Nav becomes a hidden dropdown that shows when toggled */
+    .nav{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% + 0.5rem);
+        background: white;
+        display: none;
+        padding: 1rem 1.25rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .nav ul{ display: flex; flex-direction: column; gap: 0.75rem; }
+
+    /* Show register actions inside the dropdown */
+    .nav .nav-actions{ display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.6rem; }
+
+    /* When the hidden checkbox is checked, show the nav */
+    #nav-toggle:checked ~ .nav{ display: block; }
+
+    header .logo img{ width: 4.5vh; }
+    header .nav ul button{ padding: 0.9rem; text-align: left; width: 100%; }
+
+    /* Stack key sections vertically and reduce sizes */
+    .sec1 h1{ font-size: 6.5vh; }
+    .sec2{ padding: 6vh; }
+    .sec3{ padding: 6vh; }
+    .sec4{ padding: 6vh; }
+    .sec5{ padding: 6vh; }
+}
+
+/* Breakpoint: <= 640px (sm) - compact mobile layout */
+@media (max-width: 640px) {
+    header{ padding: 0.8rem; }
+    header .logo img{ width: 4vh; }
+    .nav-toggle-label{ width: 2rem; height: 1.2rem; }
+    .sec1 h1{ font-size: 6vh; line-height: 1.05; }
+    .sec1 p{ font-size: 2.6vh; }
+    .sec1 video{ width: 100%; }
+    .sec1 .sec1video video{ width: 100%; }
+    .sec4 .container{ grid-template-columns: 1fr; }
+    .sec5 .down{ grid-template-columns: repeat(2, 1fr); }
+    .sec6 .container{ flex-direction: column; }
+}
+

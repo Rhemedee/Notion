@@ -11,7 +11,15 @@
         <div class="logo">
             <img src="assets/Notion_app_logo.png" alt="Notion Logo">
         </div>
-        
+
+        <!-- Navigation toggle for small screens -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <div class="nav">
             <ul>
                 <button>
@@ -38,25 +46,15 @@
                 <button>
                     <li>Request Demo</li>
                 </button>
+                <!-- Register actions shown inside mobile nav only -->
+                <li class="nav-actions">
+                    <button class="nav-login">Log in</button>
+                    <button class="nav-free">Get notion free</button>
+                </li>
             </ul>
         </div>
 
-
-        <div class="register">
-            <div class="login">
-                <button>Log in</button>
-            </div>
-
-            <div class="free">
-                <button>Get notion free</button>
-            </div>
-        </div>
-        <!-- <div class="register">
-            <div class="login">
-            <div class="free">
-                <button class="free">Get Notion free</button>
-            </div>
-        </div> -->
+        <!-- Register actions have been moved into the nav (.nav-actions) -->
     </header>
 
     <section>
